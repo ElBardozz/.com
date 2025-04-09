@@ -81,7 +81,27 @@
  5.<strong> Plataformas Disponibles.</strong><br>
 Genshin Impact está disponible en PC, móviles, PlayStation 4, PlayStation 5 y Nintendo Switch<br><br><br>
 
-<audio controls src="auidio.mp3"></audio>
+<div id="musicControls">
+        <button id="pauseButton">Pausar</button>
+        <button id="playButton" style="display:none;">Reproducir</button>
+        <select id="musicSelector">
+            <option value="monstadt.mp3">Sinfonia de Monstadt</option>
+            <option value="liyue.mp3">Sinfonia de Liyue</option>
+            <option value="inazuma.mp3">Sinfonia de Inazuma</option>
+            <option value="sumeru.mp3">Sinfonia de Sumeru</option>
+            <option value="audio.mp3">Sinfonia de Fonteine</option>
+            <option value="natlan.mp3">Sinfonia de Natlan</option>
+        </select>
+    </div>
+
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="monstadt.mp3" type="audio/mp3">
+        <source src="liyue.mp3" type="audio/mp3">
+        <source src="inazuma.mp3" type="audio/mp3">
+        <source src="sumeru.mp3" type="audio/mp3">
+        <source src="audio.mp3" type="audio/mp3">
+        <source src="natlan.mp3" type="audio/mp3">
+    </audio>
 
 
 </p>
